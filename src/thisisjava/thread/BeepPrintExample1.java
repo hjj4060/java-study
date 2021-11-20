@@ -1,4 +1,4 @@
-package thisisjava.lambda;
+package thisisjava.thread;
 
 import java.awt.*;
 
