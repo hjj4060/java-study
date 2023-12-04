@@ -1,4 +1,4 @@
-package 혼자_공부하는_자바.클래스;
+package 혼자_공부하는_자바.Chapter06_클래스;
 
 public class Car {
     String company = "현대자동차";
