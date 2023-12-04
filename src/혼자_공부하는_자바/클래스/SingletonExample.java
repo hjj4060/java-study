@@ -1,4 +1,4 @@
-package 혼자_공부하는_자바.Chapter06_인스턴스멤버와_정적멤버;
+package 혼자_공부하는_자바.클래스;
 
 class SingletonExample {
     static void main(String[] args) {
