@@ -1,23 +1,31 @@
 package 혼자_공부하는_자바.Chapter07_상속;
 
 public class Car {
-    String name;
-    int maxSpeed;
+    Tire frontLeftTire = new Tire("앞왼쪽", 6);
+    Tire frontRightTire = new Tire("앞오른쪽", 2);
+    Tire backLeftTire = new Tire("뒤왼쪽", 3);
+    Tire backRightTire = new Tire("뒤오른쪽", 4);
 
-    Car() {
+    int run() {
+        System.out.println("[자동차가 달립니다.]");
+        if(frontLeftTire.roll() == false) {
+            stop();
+            return 1;
+        } else if(frontRightTire.roll() == false) {
+            stop();
+            return 2;
+        } else if(backLeftTire.roll() == false) {
+            stop();
+            return 3;
+        } else if(backRightTire.roll() == false) {
+            stop();
+            return 4;
+        }
 
+        return 0;
     }
 
-    Car(String name, int maxSpeed) {
-        this.name = name;
-        this.maxSpeed = maxSpeed;
-    }
-
-    void maxSpeedPlus() {
-        maxSpeed += 5;
-    }
-
-    void setMaxSpeedMinus() {
-        maxSpeed -= 5;
+    void stop() {
+        System.out.println("[자동차가 멈춥니다.]");
     }
 }
