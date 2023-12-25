@@ -1,4 +1,4 @@
-package 혼자_공부하는_자바.Chapter07_인터페이스;
+package 혼자_공부하는_자바.Chapter08_인터페이스;
 
 public class Television implements RemoteControll {
     private int volume;
