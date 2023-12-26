@@ -5,6 +5,12 @@ public class SmartTelevisionExample {
         SmartTelevision tv = new SmartTelevision();
 
         RemoteControl rc = tv;
-        Searchable searchable = tv;
+        Searchable sc = tv;
+
+        rc.search("url");
+        sc.search("url2");
+
+        System.out.println(rc.MAX_VOLUME);
+        System.out.println(sc.MAX_VOLUME);
     }
 }
