@@ -22,8 +22,13 @@ public class SmartTelevision implements RemoteControl, Searchable {
         System.out.println("현재 TV 볼륨: " + this.volume);
     }
 
+    @Override
     public void search(String url) {
         System.out.println(url + "을 검색합니다.");
+    }
 
+    @Override
+    public void search() {
+        System.out.println("을 검색합니다.");
     }
 }

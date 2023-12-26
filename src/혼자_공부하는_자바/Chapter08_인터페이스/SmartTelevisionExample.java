@@ -7,7 +7,6 @@ public class SmartTelevisionExample {
         RemoteControl rc = tv;
         Searchable sc = tv;
 
-        rc.search("url");
         sc.search("url2");
 
         System.out.println(rc.MAX_VOLUME);
