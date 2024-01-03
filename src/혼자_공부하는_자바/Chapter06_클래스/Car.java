@@ -7,7 +7,7 @@ public class Car {
     int maxSpeed;
 
     //기본 생성자
-    Car() {}
+    public Car() {}
 
     Car(String model, String color) {
         //this.model = model;
