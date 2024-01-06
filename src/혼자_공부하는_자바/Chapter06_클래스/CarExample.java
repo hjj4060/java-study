@@ -7,5 +7,6 @@ public class CarExample {
         System.out.println(car.company); //현대 자동차
         System.out.println(car.maxSpeed); // 350
         //System.out.println(car.speed); //0
+
     }
 }
